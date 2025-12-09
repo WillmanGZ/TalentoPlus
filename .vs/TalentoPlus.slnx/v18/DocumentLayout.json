@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABA638EC-2F16-4BEA-88FE-969242C81642}|TalentoPlus.API\\TalentoPlus.API.csproj|c:\\users\\usuario\\onedrive\\documentos\\prueba\\talentoplus\\talentoplus.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABA638EC-2F16-4BEA-88FE-969242C81642}|TalentoPlus.API\\TalentoPlus.API.csproj|solutionrelative:talentoplus.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABA638EC-2F16-4BEA-88FE-969242C81642}|TalentoPlus.API\\TalentoPlus.API.csproj|c:\\users\\usuario\\onedrive\\documentos\\prueba\\talentoplus\\talentoplus.api\\talentoplus.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ABA638EC-2F16-4BEA-88FE-969242C81642}|TalentoPlus.API\\TalentoPlus.API.csproj|solutionrelative:talentoplus.api\\talentoplus.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TalentoPlus.API",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\TalentoPlus.API\\TalentoPlus.API.csproj",
+              "RelativeDocumentMoniker": "TalentoPlus.API\\TalentoPlus.API.csproj",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\TalentoPlus.API\\TalentoPlus.API.csproj",
+              "RelativeToolTip": "TalentoPlus.API\\TalentoPlus.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-09T22:37:25.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\TalentoPlus.API\\Program.cs",
+              "RelativeDocumentMoniker": "TalentoPlus.API\\Program.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\TalentoPlus.API\\Program.cs",
+              "RelativeToolTip": "TalentoPlus.API\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:31:26.688Z",
+              "EditorCaption": ""
             }
           ]
         }

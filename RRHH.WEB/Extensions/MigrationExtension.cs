@@ -16,9 +16,7 @@ namespace RRHH.WEB.Extensions;
                 {
                     logger.LogInformation("--> Trying to apply migrations...");
 
-                    // Verify if there's any migration available
-                    if (context.Database.GetPendingMigrations().Any())
-                    {
+
                         var retryCount = 0;
                         var maxRetries = 5;
 
@@ -42,11 +40,6 @@ namespace RRHH.WEB.Extensions;
                         }
                         
                         context.Database.Migrate();
-                    }
-                    else
-                    {
-                        logger.LogInformation("--> There's no migrations available");
-                    }
                 }
                 catch (Exception ex)
                 {

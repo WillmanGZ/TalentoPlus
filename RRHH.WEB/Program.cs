@@ -11,9 +11,9 @@ builder.Services.AddDatabase();
 
 // Use identity user system and role system
 builder.Services.AddIdentity<Employee, IdentityRole>(options => {})
-    .AddEntityFrameworkStores<AppDbContext>() // Using our dbContext
+    .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders()
-    .AddDefaultUI(); // Using tokens for reset or confirmation
+    .AddDefaultUI();
 
 builder.Services.AddScoped<UserManager<Employee>>();
 

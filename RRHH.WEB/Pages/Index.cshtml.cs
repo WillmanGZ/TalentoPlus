@@ -14,10 +14,10 @@ namespace AdminManager.Web.Pages
 
         public IActionResult OnGet()
         {
-            if (User.Identity != null && User.Identity.IsAuthenticated)
-            {
-                return RedirectToPage("/Admin/Dashboard");
-            }
+
+
+            return RedirectToPage("/Admin/Dashboard");
+
 
             return Page();
         }

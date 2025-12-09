@@ -16,6 +16,28 @@ services:
     networks:
       - talento-network
 
+  # API
+  talento-api:
+    image: talento-api-img
+    container_name: talento-api-container
+    build:
+      context: .
+      dockerfile: TalentoPlus.API/Dockerfile
+    ports:
+      - "5152:5152"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: 5041
+      DB_HOST: postgres-db
+      DB_PORT: 5432
+      DB_NAME: talento_plus_db
+      DB_USER: postgres
+      DB_PASS: Qwe.123*
+    depends_on:
+      - postgres-db
+    networks:
+      - talento-network
+
   # RRHH.Web
   rrhh-web:
     container_name: rrhh-web-container

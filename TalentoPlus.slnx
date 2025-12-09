@@ -3,4 +3,5 @@
     <File Path="docker-compose.yaml" />
   </Folder>
   <Project Path="RRHH.WEB/RRHH.WEB.csproj" />
+  <Project Path="TalentoPlus.API/TalentoPlus.API.csproj" Id="aba638ec-2f16-4bea-88fe-969242c81642" />
 </Solution>
