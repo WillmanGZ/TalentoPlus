@@ -1,11 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace RRHH.WEB.Pages;
-
-public class IndexModel : PageModel
+namespace AdminManager.Web.Pages
 {
-    public void OnGet()
+    public class IndexModel : PageModel
     {
+        private readonly ILogger<IndexModel> _logger;
+
+        public IndexModel(ILogger<IndexModel> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult OnGet()
+        {
+            if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                return RedirectToPage("/Admin/Dashboard");
+            }
+
+            return Page();
+        }
     }
 }

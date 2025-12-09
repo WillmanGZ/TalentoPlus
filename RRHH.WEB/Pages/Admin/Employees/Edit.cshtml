@@ -1,0 +1,55 @@
+﻿@page "{id}"
+@model RRHH.WEB.Pages.Admin.Employees.EditModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<h3 class="mb-4">Edit Employee</h3>
+
+<form method="post" class="card p-3 shadow-sm">
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    @* Campo oculto para enviar el Id del empleado que se está editando *@
+    <input type="hidden" asp-for="Input.Id" /> 
+
+    <div class="mb-3">
+        <label asp-for="Input.Email" class="form-label">Email</label>
+        <input asp-for="Input.Email" class="form-control" />
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.UserName" class="form-label">Username</label>
+        <input asp-for="Input.UserName" class="form-control" />
+        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.PhoneNumber" class="form-label">Phone</label>
+        <input asp-for="Input.PhoneNumber" class="form-control" />
+        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Position" class="form-label">Position</label>
+        <input asp-for="Input.Position" class="form-control" />
+        <span asp-validation-for="Input.Position" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Salary" class="form-label">Salary</label>
+        <input asp-for="Input.Salary" class="form-control" />
+        <span asp-validation-for="Input.Salary" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Department" class="form-label">Department</label>
+        <input asp-for="Input.Department" class="form-control" />
+        <span asp-validation-for="Input.Department" class="text-danger"></span>
+    </div>
+    
+    @* NOTA: Eliminamos el campo Password ya que no se edita normalmente aquí. *@
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-page="./Index" class="btn btn-secondary mt-2">Cancel</a>
+</form>

@@ -1,0 +1,43 @@
+﻿@page "{id}"
+@model RRHH.WEB.Pages.Admin.Employees.DetailsModel
+@{
+    Layout = "_AdminLayout";  
+}
+
+<h3 class="mb-4">Employee details</h3>
+
+<div class="card p-3 shadow-sm">
+    <dl class="row">
+        <dt class="col-sm-3">ID</dt>
+        <dd class="col-sm-9">@Model.Employee.Id</dd>
+
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@Model.Employee.Email</dd>
+
+        <dt class="col-sm-3">Username</dt>
+        <dd class="col-sm-9">@Model.Employee.UserName</dd>
+
+        <dt class="col-sm-3">Phone</dt>
+        <dd class="col-sm-9">@Model.Employee.PhoneNumber</dd>
+
+        <dt class="col-sm-3">Position</dt>
+        <dd class="col-sm-9">@Model.Employee.Position</dd>
+
+        <dt class="col-sm-3">Salary</dt>
+        <dd class="col-sm-9">$@Model.Employee.Salary</dd>
+
+        <dt class="col-sm-3">Department</dt>
+        <dd class="col-sm-9">@Model.Employee.Department</dd>
+
+        <dt class="col-sm-3">Hire date</dt>
+        <dd class="col-sm-9">@Model.Employee.HireDate.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Active</dt>
+        <dd class="col-sm-9">@(Model.Employee.IsActive ? "Yes" : "No")</dd>
+    </dl>
+
+    <div>
+        <a asp-page="./Edit" asp-route-id="@Model.Employee.Id" class="btn btn-success me-2">Edit</a>
+        <a asp-page="./Index" class="btn btn-secondary">Back</a>
+    </div>
+</div>

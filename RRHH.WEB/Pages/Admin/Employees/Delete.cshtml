@@ -1,0 +1,41 @@
+﻿@page "{id}"
+@model RRHH.WEB.Pages.Admin.Employees.DeleteModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<h3 class="mb-4 text-danger">Delete Employee</h3>
+
+<div class="alert alert-warning">
+    <p>Are you sure you want to delete this employee?</p>
+    <p class="fw-bold">This action cannot be undone.</p>
+</div>
+
+<div class="card p-3 mb-3 shadow-sm">
+    <dl class="row">
+        @* Campo oculto para enviar el Id al OnPostAsync *@
+        <input type="hidden" asp-for="Employee.Id" /> 
+
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@Model.Employee.Email</dd>
+
+        <dt class="col-sm-3">Username</dt>
+        <dd class="col-sm-9">@Model.Employee.UserName</dd>
+
+        <dt class="col-sm-3">Phone</dt>
+        <dd class="col-sm-9">@Model.Employee.PhoneNumber</dd>
+        
+        @* Incluimos algunos campos específicos del empleado para confirmar la identidad *@
+        <dt class="col-sm-3">Position</dt>
+        <dd class="col-sm-9">@Model.Employee.Position</dd>
+        
+        <dt class="col-sm-3">Department</dt>
+        <dd class="col-sm-9">@Model.Employee.Department</dd>
+    </dl>
+</div>
+
+<form method="post">
+    @* Pasamos el Id como parámetro del formulario para el OnPostAsync *@
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+</form>

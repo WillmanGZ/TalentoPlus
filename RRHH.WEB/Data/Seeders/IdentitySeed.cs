@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using RRHH.WEB.Data.Entities;
 
 namespace RRHH.WEB.Data.Seeders
 {
@@ -7,7 +8,7 @@ namespace RRHH.WEB.Data.Seeders
         public static async Task SeedAsync(IServiceProvider services)
         {
             var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-            var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+            var userManager = services.GetRequiredService<UserManager<Employee>>();
 
             // Create roles
             string[] roles = { "Admin", "Employee"};
@@ -25,11 +26,20 @@ namespace RRHH.WEB.Data.Seeders
             var existingAdmin = await userManager.FindByEmailAsync(adminEmail);
             if (existingAdmin == null)
             {
-                var adminUser = new IdentityUser
+                var adminUser = new Employee
                 {
-                    UserName = adminEmail,
+                    UserName = "Admin",
                     Email = adminEmail,
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    
+                    Position = "Administrator",
+                    Salary = 0,              
+                    HireDate = DateTime.UtcNow,
+                    IsActive = true,
+
+                    EducationLevel = "N/A",
+                    ProfessionalProfile = "System Administrator",
+                    Department = "Administration",
                 };
 
                 var createAdmin = await userManager.CreateAsync(adminUser, adminPassword);

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using RRHH.WEB.Configs;
 using RRHH.WEB.Data;
+using RRHH.WEB.Data.Entities;
 using RRHH.WEB.Data.Seeders;
 using RRHH.WEB.Extensions;
 
@@ -9,10 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDatabase();
 
 // Use identity user system and role system
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+builder.Services.AddIdentity<Employee, IdentityRole>(options => {})
     .AddEntityFrameworkStores<AppDbContext>() // Using our dbContext
-    .AddDefaultTokenProviders() // Using tokens for reset or confirmation
-    .AddDefaultUI(); // Use razor pages
+    .AddDefaultTokenProviders()
+    .AddDefaultUI(); // Using tokens for reset or confirmation
+
+builder.Services.AddScoped<UserManager<Employee>>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();

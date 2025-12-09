@@ -1,0 +1,69 @@
+﻿@page
+@model RRHH.WEB.Pages.Admin.Employees.CreateModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<h3 class="mb-4">Register new employee</h3>
+
+<form method="post" class="card p-3 shadow-sm">
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Email" class="form-label">Email</label>
+        <input asp-for="Input.Email" class="form-control" />
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.UserName" class="form-label">Username</label>
+        <input asp-for="Input.UserName" class="form-control" />
+        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.PhoneNumber" class="form-label">Phone</label>
+        <input asp-for="Input.PhoneNumber" class="form-control" />
+        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <!-- Employee-specific fields -->
+    <div class="mb-3">
+        <label asp-for="Input.Position" class="form-label">Position</label>
+        <input asp-for="Input.Position" class="form-control" />
+        <span asp-validation-for="Input.Position" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Salary" class="form-label">Salary</label>
+        <input asp-for="Input.Salary" class="form-control" />
+        <span asp-validation-for="Input.Salary" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Department" class="form-label">Department</label>
+        <input asp-for="Input.Department" class="form-control" />
+        <span asp-validation-for="Input.Department" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Input.EducationLevel" class="form-label">Education Level</label>
+        <input asp-for="Input.EducationLevel" class="form-control" />
+        <span asp-validation-for="Input.EducationLevel" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Input.ProfessionalProfile" class="form-label">Profesional Profile</label>
+        <input asp-for="Input.ProfessionalProfile" class="form-control" />
+        <span asp-validation-for="Input.ProfessionalProfile" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Password" class="form-label">Password</label>
+        <input asp-for="Input.Password" class="form-control" />
+        <span asp-validation-for="Input.Password" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-page="./Index" class="btn btn-secondary mt-2">Cancel</a>
+</form>
