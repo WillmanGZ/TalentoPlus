@@ -19,10 +19,8 @@ namespace RRHH.WEB.Pages.Admin.Employees
         [BindProperty]
         public InputModel Input { get; set; } = new();
 
-        // 🎯 InputModel modificado: Se eliminó 'Password'
         public class InputModel
         {
-            // Necesitamos el Id para identificar al empleado a actualizar
             [Required]
             public string Id { get; set; }
 
@@ -44,6 +42,10 @@ namespace RRHH.WEB.Pages.Admin.Employees
 
             [Required]
             public string Department { get; set; }
+
+            public string EducationLevel { get; set; }
+
+            public string ProfessionalProfile { get; set; }
         }
 
         // Carga los datos existentes del empleado
@@ -65,7 +67,9 @@ namespace RRHH.WEB.Pages.Admin.Employees
                 PhoneNumber = employee.PhoneNumber,
                 Position = employee.Position,
                 Salary = employee.Salary,
-                Department = employee.Department
+                Department = employee.Department,
+                ProfessionalProfile = employee.ProfessionalProfile,
+                EducationLevel = employee.EducationLevel
             };
 
             return Page();

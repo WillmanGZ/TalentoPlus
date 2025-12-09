@@ -47,8 +47,19 @@
         <input asp-for="Input.Department" class="form-control" />
         <span asp-validation-for="Input.Department" class="text-danger"></span>
     </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.EducationLevel" class="form-label">Education Level</label>
+        <input asp-for="Input.EducationLevel" class="form-control" />
+        <span asp-validation-for="Input.EducationLevel" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Input.ProfessionalProfile" class="form-label">Profesional Profile</label>
+        <input asp-for="Input.ProfessionalProfile" class="form-control" />
+        <span asp-validation-for="Input.ProfessionalProfile" class="text-danger"></span>
+    </div>
     
-    @* NOTA: Eliminamos el campo Password ya que no se edita normalmente aquí. *@
 
     <button type="submit" class="btn btn-primary">Save Changes</button>
     <a asp-page="./Index" class="btn btn-secondary mt-2">Cancel</a>
