@@ -1,0 +1,48 @@
+﻿version: '3.8'
+
+services:
+  # PostgreSQL
+  postgres-db:
+    image: postgres:15
+    container_name: talento-postgres
+    environment:
+      POSTGRES_DB: talento_plus_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Qwe.123*
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - talento-network
+
+  # RRHH.Web
+  rrhh-web:
+    container_name: rrhh-web-container
+    build:
+      context: .
+      dockerfile: RRHH.WEB/Dockerfile
+    image: rrhh-web-img
+    ports:
+      - "5041:5041"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: 5041
+      DB_HOST: postgres-db
+      DB_PORT: 5432
+      DB_NAME: talento_plus_db
+      DB_USER: postgres
+      DB_PASS: Qwe.123*
+
+      API_BASE_URL: http://api:5152
+    depends_on:
+      - postgres-db
+    networks:
+      - talento-network
+
+volumes:
+  postgres_data:
+
+networks:
+  talento-network:
+    driver: bridge
