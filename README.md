@@ -118,4 +118,6 @@ docker-compose logs postgres-db
 
 ---
 
+**Github Repository**: https://github.com/WillmanGZ/TalentoPlus
+
 **Version**: 1.0.0

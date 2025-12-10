@@ -42,8 +42,7 @@
               "RelativeToolTip": "RRHH.WEB\\Pages\\Admin\\Employees\\Index.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-10T00:30:58.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T00:30:58.334Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "RRHH.WEB\\Controllers\\ReportsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T00:25:48.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T00:25:48.291Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "RRHH.WEB\\Program.cs",
               "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Program.cs",
               "RelativeToolTip": "RRHH.WEB\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T00:24:56.129Z",
               "EditorCaption": ""
@@ -81,8 +79,7 @@
               "RelativeToolTip": "RRHH.WEB\\Data\\Entities\\Employee.cs",
               "ViewState": "AgIAABAAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T00:22:55.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T00:22:55.228Z"
             }
           ]
         }
