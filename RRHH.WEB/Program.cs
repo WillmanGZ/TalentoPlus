@@ -4,6 +4,7 @@ using RRHH.WEB.Data;
 using RRHH.WEB.Data.Entities;
 using RRHH.WEB.Data.Seeders;
 using RRHH.WEB.Extensions;
+using QuestPDF.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,8 @@ builder.Services.AddScoped<UserManager<Employee>>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+QuestPDF.Settings.License = LicenseType.Community;
 
 var app = builder.Build();
 

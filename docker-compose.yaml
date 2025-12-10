@@ -27,7 +27,7 @@ services:
       - "5152:5152"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_HTTP_PORTS: 5041
+      ASPNETCORE_HTTP_PORTS: 5152
       DB_HOST: postgres-db
       DB_PORT: 5432
       DB_NAME: talento_plus_db

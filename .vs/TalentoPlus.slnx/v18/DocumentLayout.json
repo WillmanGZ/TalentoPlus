@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABA638EC-2F16-4BEA-88FE-969242C81642}|TalentoPlus.API\\TalentoPlus.API.csproj|c:\\users\\usuario\\onedrive\\documentos\\prueba\\talentoplus\\talentoplus.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABA638EC-2F16-4BEA-88FE-969242C81642}|TalentoPlus.API\\TalentoPlus.API.csproj|solutionrelative:talentoplus.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A230CFBB-FC34-336C-FA31-DEE2A5D2AB0A}|RRHH.WEB\\RRHH.WEB.csproj|c:\\users\\usuario\\onedrive\\documentos\\prueba\\talentoplus\\rrhh.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A230CFBB-FC34-336C-FA31-DEE2A5D2AB0A}|RRHH.WEB\\RRHH.WEB.csproj|solutionrelative:rrhh.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABA638EC-2F16-4BEA-88FE-969242C81642}|TalentoPlus.API\\TalentoPlus.API.csproj|c:\\users\\usuario\\onedrive\\documentos\\prueba\\talentoplus\\talentoplus.api\\talentoplus.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{ABA638EC-2F16-4BEA-88FE-969242C81642}|TalentoPlus.API\\TalentoPlus.API.csproj|solutionrelative:talentoplus.api\\talentoplus.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A230CFBB-FC34-336C-FA31-DEE2A5D2AB0A}|RRHH.WEB\\RRHH.WEB.csproj|c:\\users\\usuario\\onedrive\\documentos\\prueba\\talentoplus\\rrhh.web\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A230CFBB-FC34-336C-FA31-DEE2A5D2AB0A}|RRHH.WEB\\RRHH.WEB.csproj|solutionrelative:rrhh.web\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A230CFBB-FC34-336C-FA31-DEE2A5D2AB0A}|RRHH.WEB\\RRHH.WEB.csproj|c:\\users\\usuario\\onedrive\\documentos\\prueba\\talentoplus\\rrhh.web\\pages\\admin\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A230CFBB-FC34-336C-FA31-DEE2A5D2AB0A}|RRHH.WEB\\RRHH.WEB.csproj|solutionrelative:rrhh.web\\pages\\admin\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A230CFBB-FC34-336C-FA31-DEE2A5D2AB0A}|RRHH.WEB\\RRHH.WEB.csproj|c:\\users\\usuario\\onedrive\\documentos\\prueba\\talentoplus\\rrhh.web\\data\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A230CFBB-FC34-336C-FA31-DEE2A5D2AB0A}|RRHH.WEB\\RRHH.WEB.csproj|solutionrelative:rrhh.web\\data\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +34,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Pages\\Admin\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "RRHH.WEB\\Pages\\Admin\\Employees\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Pages\\Admin\\Employees\\Index.cshtml",
+              "RelativeToolTip": "RRHH.WEB\\Pages\\Admin\\Employees\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T00:30:58.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TalentoPlus.API",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\TalentoPlus.API\\TalentoPlus.API.csproj",
-              "RelativeDocumentMoniker": "TalentoPlus.API\\TalentoPlus.API.csproj",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\TalentoPlus.API\\TalentoPlus.API.csproj",
-              "RelativeToolTip": "TalentoPlus.API\\TalentoPlus.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-09T22:37:25.1Z",
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "RRHH.WEB\\Controllers\\ReportsController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "RRHH.WEB\\Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T00:25:48.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\TalentoPlus.API\\Program.cs",
-              "RelativeDocumentMoniker": "TalentoPlus.API\\Program.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\TalentoPlus.API\\Program.cs",
-              "RelativeToolTip": "TalentoPlus.API\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowA8AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Program.cs",
+              "RelativeDocumentMoniker": "RRHH.WEB\\Program.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Program.cs",
+              "RelativeToolTip": "RRHH.WEB\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T22:31:26.688Z",
+              "WhenOpened": "2025-12-10T00:24:56.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Data\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "RRHH.WEB\\Data\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Prueba\\TalentoPlus\\RRHH.WEB\\Data\\Entities\\Employee.cs",
+              "RelativeToolTip": "RRHH.WEB\\Data\\Entities\\Employee.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T00:22:55.228Z",
               "EditorCaption": ""
             }
           ]
