@@ -15,41 +15,27 @@
     <div class="container-fluid min-vh-100">
         <div class="row flex-nowrap">
 
-            <aside class="col-auto col-md-3 col-lg-2 bg-dark text-white min-vh-100 d-flex flex-column p-3">
-                <h4 class="text-center mb-4">Talento Plus</h4>
+            <aside class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex flex-column min-vh-100">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Menú Admin</span>
+                    </a>
 
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        @* <a asp-page="/Admin/Dashboard" class="nav-link @(Context.Request.Path.Value?.Contains("Dashboard") == true ? "active bg-primary text-white" : "text-white")"> *@
-                        @*     General *@
-                        @* </a> *@
-                    </li>
-                    <li class="nav-item">
-                        @* <a href="/Admin/Products" class="nav-link @(Context.Request.Path.Value?.Contains("Products") == true ? "active bg-primary text-white" : "text-white")"> *@
-                        @*     Productos *@
-                        @* </a> *@
-                    </li>
-                    <li class="nav-item">
-                        @* <a href="/Admin/Clients" class="nav-link @(Context.Request.Path.Value?.Contains("Clients") == true ? "active bg-primary text-white" : "text-white")"> *@
-                        @*     Clientes *@
-                        @* </a> *@
-                    </li>
-                    <li class="nav-item">
-                        @* <a asp-page="/Admin/Sales" class="nav-link @(Context.Request.Path.Value?.Contains("Sales") == true ? "active bg-primary text-white" : "text-white")"> *@
-                        @*     Ventas *@
-                        @* </a> *@
-                    </li>
-                </ul>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="/Admin/Dashboard" class="nav-link px-0 align-middle text-white">
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
 
-                <div class="mt-auto">
-                    <form method="post" asp-area="Identity" asp-page="/Account/Logout">
-                        <button type="submit" class="btn btn-danger w-100">
-                            Cerrar sesión
-                        </button>
-                    </form>
+
+                        <li class="w-100">
+                            <a href="/Admin/Employees" class="nav-link px-0 text-white"> <span class="d-none d-sm-inline">Gestión de Empleados</span></a>
+                        </li>
+
+                    </ul>
                 </div>
             </aside>
-
             <main class="col py-4">
                 <div class="container">
                     @RenderBody()
@@ -57,6 +43,7 @@
             </main>
         </div>
     </div>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
